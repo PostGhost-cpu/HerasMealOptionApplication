@@ -24,7 +24,8 @@ class MainActivity : AppCompatActivity() {
             val Time = edtTime.text.toString()
             var meal : String = "Empty"
             var time : String = "Empty"
-
+        //Error handling
+        try{
             //input time of day (morning, mid morning, afternoon, mid afternoon, dinner)
             if (Time == "Morning"){
                 meal = "scrambled eggs with toast and avocado"
@@ -64,9 +65,11 @@ class MainActivity : AppCompatActivity() {
                 time = "dessert"
             }
 
-
             //output meals and display suggestions
             txtDisplay.text = "Your $time, $meal"
+        catch (e: Exception){
+            txtDisplay.text = "Enter the correct option(Morning, Mid-Morning, Afternoon, Mid-Afternoon, Dinner or After Dinner)"
+        }
         }
 
         btnReset.setOnClickListener {
