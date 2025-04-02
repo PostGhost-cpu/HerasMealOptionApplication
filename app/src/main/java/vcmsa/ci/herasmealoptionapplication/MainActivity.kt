@@ -27,41 +27,41 @@ class MainActivity : AppCompatActivity() {
         //Error handling
         try{
             //input time of day (morning, mid morning, afternoon, mid afternoon, dinner)
-            if (Time == "Morning"){
+            if (Time == "Morning" || Time == "morning"){
                 meal = "scrambled eggs with toast and avocado"
             }
-            else if (Time == "Mid-Morning"){
+            else if (Time == "Mid-Morning" || Time == "mid-morning"){
                 meal = "a smoothie made with spinach, banana, and almond milk"
             }
-            else if (Time == "Afternoon"){
+            else if (Time == "Afternoon" || Time == "afternoon"){
                 meal = "grilled chicken salad with mixed greens, cucumbers, and a light vinaigrette dressing"
             }
-            else if (Time == "Mid-Afternoon"){
+            else if (Time == "Mid-Afternoon" || Time == "mid-afternoon"){
                 meal = "a carrot sticks with hummus or guacamole"
             }
-            else if (Time == "Dinner"){
+            else if (Time == "Dinner" || Time == "dinner"){
                 meal = "grilled steak with mashed cauliflower and sautéed spinach"
             }
-            else if(Time == "After Dinner"){
+            else if(Time == "After Dinner" || Time == "after dinner"){
                 meal = "chia Pudding with Berries"
             }
             //Display meal
-            if (Time == "Morning"){
+            if (Time == "Morning" || Time == "morning"){
                 time = "breakfast"
             }
-            else if (Time == "Mid-Morning"){
+            else if (Time == "Mid-Morning" || Time == "mid-morning"){
                 time = "snack"
             }
-            else if (Time == "Afternoon"){
+            else if (Time == "Afternoon" || Time == "afternoon"){
                 time = "lunch"
             }
-            else if (Time == "Mid-Afternoon"){
+            else if (Time == "Mid-Afternoon" || Time == "mid-afternoon"){
                 time = "quick bite"
             }
-            else if (Time == "Dinner"){
+            else if (Time == "Dinner" || Time == "dinner"){
                 time = "evening Meal"
             }
-            else if (Time == "After Dinner"){
+            else if (Time == "After Dinner" || Time == "after dinner"){
                 time = "dessert"
             }
 
